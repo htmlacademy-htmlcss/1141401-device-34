@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url(../fonts/raleway/raleway-800.woff2);
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/rubik/rubik-400.woff2);
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/rubik/rubik-700.woff2);
+    font-display: swap;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    background-color: #ffffff;
+    color: #444444;
+  }
+  .visually_hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    position: absolute;
+  }
+
+  .wrapper {
+    width: 1160px;
+    margin: 0 auto;
+  }
+
+  .main_header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffe17f;
+    position: relative;
+  }
+
+  .main_logo {
+    position: absolute;
+    left: 61px;
+    top: -21px;
+    z-index: 2;
+  }
+
+  .header_search_input {
+    border: 2px solid #000000;
+    border-radius: 50px 0 0 50px;
+    box-sizing: border-box;
+    padding: 0 0 0 16px;
+    width: 359px;
+    margin-left: 60px;
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    color: #000000;
+    background: transparent;
+    min-height: 40px;
+  }
+
+  .header_search_input::placeholder {
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    color: #000000;
+  }
+
+  .header_search_submit {
+    width: 160px;
+    border: 2px solid #000000;
+    border-radius: 0 50px 50px 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    background: transparent;
+    border-left: 0;
+    min-height: 40px;
+    margin-right: 26px;
+  }
+
+  .header_search_form {
+    display: flex;
+    align-items:center ;
+    margin-top: 42px;
+  }
+
+  .header_button {
+    border: 0;
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    background: transparent;
+    color: #000;
+    align-self: end;
+  }
+
+  .login {
+    padding-left: 27px;
+    margin-right: 185px;
+    align-self: end;
+  }
+  .trash {
+    margin-left: 50px;
+  }
+
+  .main_navigation_list {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-style: normal;
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    padding:0 60px;
+    margin-top: 48px;
+  }
+
+  .main_navigation_link {
+    text-decoration: none;
+    color: #000;
+  }
+  .main_navigation_item:first-child {
+    margin-right: 295px;
+  }
