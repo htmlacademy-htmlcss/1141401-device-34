@@ -453,7 +453,7 @@ body {
   padding: 0;
 }
 .filter_form {
-    background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 .form_title {
   font-family: "Raleway";
@@ -474,4 +474,69 @@ body {
   line-height: 20px;
   letter-spacing: -0.02em;
   color: #000000;
+}
+
+.product_list_link {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.product_price {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  color: #444444;
+}
+
+.more_products {
+  background-color: #fff;
+  width: 760px;
+  border: 3px dashed #e5e5e5;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.pagination_nav {
+  background-color: #ebebeb;
+}
+
+.pagination_button {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.pagination_list {
+  list-style: none;
+  padding: 0;
+}
+
+.pagination_item_link {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+  opacity: 0.3;
 }
