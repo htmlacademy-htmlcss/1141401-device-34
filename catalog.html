@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div class="wrapper">
       <header class="main_header">
         <img
           class="main_logo images"
@@ -52,18 +51,19 @@
           </ul>
         </nav>
       </header>
-    </div>
     <main class="page_catalog">
       <h1 class="visually_hidden">Каталог товаров магазина "Девайс"</h1>
       <section class="device_filters">
-        <div class="wrapper">
-          <h2 class="catalog_category_title">Моноподы для селфи</h2>
-          <ul class="breadcrumbs_catalog_list">
-            <li class="breadrumbs_catalog_item">Главная</li>
-            <li class="breadrumbs_catalog_item">Каталог товаров</li>
-            <li class="breadrumbs_catalog_item">Моноподы для селфи</li>
-          </ul>
-        </div>
+        <header class="catalog_header">
+            <div class="wrapper">
+                <h2 class="catalog_category_title">Моноподы для селфи</h2>
+                <ul class="breadcrumbs_catalog_list">
+                    <li class="breadrumbs_catalog_item">Главная</li>
+                    <li class="breadrumbs_catalog_item">Каталог товаров</li>
+                    <li class="breadrumbs_catalog_item">Моноподы для селфи</li>
+                </ul>
+            </div>
+        </header>
         <form
           class="filter_form"
           action="https://echo.htmlacademy.ru/"
@@ -90,15 +90,15 @@
           </fieldset>
           <fieldset class="color_filters">
             <legend class="fieldset_title">Цвет</legend>
-            <input type="checkbox" name="black" id="black" checked />
+            <input type="checkbox" name="color" id="black" checked />
             <label for="black"> Чорный </label>
-            <input type="checkbox" name="white" id="white" checked />
+            <input type="checkbox" name="color" id="white" checked />
             <label for="white"> Белый </label>
-            <input type="checkbox" name="blue" id="blue" />
+            <input type="checkbox" name="color" id="blue" />
             <label for="blue"> Синий </label>
-            <input type="checkbox" name="red" id="red" />
+            <input type="checkbox" name="color" id="red" />
             <label for="red"> Красный </label>
-            <input type="checkbox" name="pink" id="pink" />
+            <input type="checkbox" name="color" id="pink" />
             <label for="pink"> Розовый </label>
           </fieldset>
           <fieldset class="bluetooth_filters">

@@ -4,10 +4,17 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon.png"
+    />
   </head>
   <body>
-    <div class="wrapper">
-      <header class="main_header">
+    <header class="main_header">
+      <a href="#">
         <img
           class="main_logo images"
           src="images/svg_ico/device-logo.svg"
@@ -16,227 +23,225 @@
           width="145"
           height="36"
         />
-        <form
-          class="header_search_form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <input
-            class="header_search_input"
-            type="search"
-            name="header_search"
-            id="header_search"
-            placeholder="Текст поиска"
-          />
-          <input type="submit" class="header_search_submit" value="Найти" />
-        </form>
-        <button class="login header_button">Войти</button>
-        <button class="compare header_button">Сравнить</button>
-        <button class="trash header_button">Корзина</button>
-        <nav class="main_header_navigation">
-          <ul class="main_navigation_list">
-            <li class="main_navigation_item">
-              <a class="main_navigation_link" href="catalog.html"
-                >Каталог товаров</a
+      </a>
+      <form
+        class="header_search_form"
+        action="https://echo.htmlacademy.ru/"
+        method="post"
+      >
+        <input
+          class="header_search_input"
+          type="search"
+          name="header_search"
+          id="header_search"
+          placeholder="Текст поиска"
+        />
+        <input type="submit" class="header_search_submit" value="Найти" />
+      </form>
+      <a class="login header_button" href="#">Войти</a>
+      <a class="compare header_button" href="#">Сравнить</a>
+      <a class="trash header_button" href="#">Корзина</a>
+      <nav class="main_header_navigation">
+        <div class="catalog_container">
+          <button type="button" class="catalog_dropdown">
+            Каталог товаров
+          </button>
+          <ul class="dropdown_list dropdown_list_close">
+            <li class="dropdown_item">
+              <a class="dropdown_link" href="#">Виртуальная реальность</a>
+              <a class="dropdown_link" href="catalog.html"
+                >Моноподы для селфи</a
               >
+              <a class="dropdown_link" href="#">Экшн камеры</a>
             </li>
-            <li class="main_navigation_item">
-              <a class="main_navigation_link" href="delivery.html">Доставка</a>
+            <li class="dropdown_item">
+              <a class="dropdown_link" href="#">Фитнес-браслеты</a>
+              <a class="dropdown_link" href="#">Умные часы</a>
             </li>
-            <li class="main_navigation_item">
-              <a class="main_navigation_link" href="garanty.html">Гарантия</a>
-            </li>
-            <li class="main_navigation_item">
-              <a class="main_navigation_link" href="contacts.html">Контакты</a>
+            <li class="dropdown_item">
+              <a class="dropdown_link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
-        </nav>
-      </header>
-    </div>
+        </div>
+        <ul class="main_navigation_list">
+          <li class="main_navigation_item">
+            <a class="main_navigation_link" href="delivery.html">Доставка</a>
+          </li>
+          <li class="main_navigation_item">
+            <a class="main_navigation_link" href="garanty.html">Гарантия</a>
+          </li>
+          <li class="main_navigation_item">
+            <a class="main_navigation_link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="main_page">
       <h1 class="visually_hidden">Главная страница магазина "Девайс"</h1>
       <section class="main_slider">
         <h2 class="visually_hidden">Слайдер с товарами</h2>
-        <div class="wrapper">
-          <img
-            src="images/slider/slider-1.png"
-            alt="Изображение Дрона в слайдере"
-            class="slider_image"
-          />
-          <span class="slider_number"> 01 </span>
-          <h3 class="Slider_caption">Порхает как бабочка, жалит как пчела!</h3>
-          <span class="slider_description">
-            Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-            замаскированным под стандартную камеру.
-          </span>
-          <button class="slider_button button">Подробнее</button>
+        <ul class="slider_list">
+          <li class="slider_list_item">
+            <div class="slider_image">
+              <img
+                src="images/slider/slider-1.png"
+                alt="Изображение Дрона в слайдере"
+                class="slider_image"
+              />
+            </div>
+            <div class="slider_description">
+              <span class="slider_number"> 01 </span>
+              <h3 class="slider_caption">
+                Порхает как бабочка, жалит как пчела!
+              </h3>
+              <p class="slider_text">
+                Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                лазером, замаскированным под стандартную камеру.
+              </p>
+              <a class="slider_button button" href="#"> Подробнее</a>
 
-          <fieldset class="sliders_radio_group">
-            <legend class="visually_hidden">Переключатели слайдов</legend>
+              <dl class="technical_spec_list">
+                <div class="spec_container">
+                  <dt class="technical_spec_term">Дальность полета</dt>
+                  <dd class="technical_spec_desription">800 м</dd>
+                </div>
+                <div class="spec_container">
+                  <dt class="technical_spec_term">Радиус поражения</dt>
+                  <dd class="technical_spec_desription">50 м</dd>
+                </div>
+              </dl>
+            </div>
+          </li>
+          <li class="slider_list_item"></li>
+          <li class="slider_list_item"></li>
+        </ul>
 
-            <label for="first_slide" class="visually_hidden">
-              первый слайд</label
-            >
+        <fieldset class="sliders_radio_group">
+          <legend class="visually_hidden">Переключатели слайдов</legend>
 
-            <input type="radio" name="slider_input" id="first_slide" />
+          <label for="first_slide" class="visually_hidden"> первый слайд</label>
 
-            <label for="second_slide" class="visually_hidden">
-              второй слайд</label
-            >
+          <input type="radio" name="slider_input" id="first_slide" />
 
-            <input type="radio" name="slider_input" id="second_slide" />
+          <label for="second_slide" class="visually_hidden">
+            второй слайд</label
+          >
 
-            <label for="third_slide" class="visually_hidden">
-              третий слайд</label
-            >
+          <input type="radio" name="slider_input" id="second_slide" />
 
-            <input type="radio" name="slider_input" id="third_slide" />
-          </fieldset>
+          <label for="third_slide" class="visually_hidden"> третий слайд</label>
 
-          <dl class="technical_spec_list">
-            <dd class="technical_spec_desription">800 м</dd>
-            <dt class="techinal_spec_term">Дальность полета</dt>
-            <dd class="technical_spec_desription">50 м</dd>
-            <dt class="techinal_spec_term">Радиус поражения</dt>
-          </dl>
-        </div>
+          <input type="radio" name="slider_input" id="third_slide" />
+        </fieldset>
       </section>
+
       <section class="catalog_category">
         <h2 class="visually_hidden">Категории товаров</h2>
-        <div class="wrapper">
-          <nav class="catalog_category_nav">
-            <ul class="category_nav_list">
-              <li class="category_nav_item">
-                <a href="#" class="category_nav_link">
-                  <div class="category_nav_images">
-                    <img
-                      src="images/catalog_category/virtual_glasses.svg"
-                      alt="очки виртуальной реальности"
-                      class="images"
-                      width="97px"
-                      height="55px"
-                    />
-                  </div>
-                  Виртуальная реальность
-                </a>
-              </li>
-              <li class="category_nav_item">
-                <a href="#" class="category_nav_link">
-                  <div class="category_nav_images">
-                    <img
-                      src="images/catalog_category/monopods.svg"
-                      alt="моноподы"
-                      class="images"
-                      width="86"
-                      height="117"
-                    />
-                  </div>
-                  Моноподы для селфи
-                </a>
-              </li>
-              <li class="category_nav_item">
-                <a href="#" class="category_nav_link">
-                  <div class="category_nav_images">
-                    <img
-                      src="images/catalog_category/action_camera.svg"
-                      alt="Экшн-камера"
-                      class="images"
-                      width="71"
-                      height="87"
-                    />
-                  </div>
-                  Экшн-камеры
-                </a>
-              </li>
-              <li class="category_nav_item">
-                <a href="#" class="category_nav_link">
-                  <div class="category_nav_images">
-                    <img
-                      src="images/catalog_category/fitnes_band.svg"
-                      alt="Фитнес-браслеты"
-                      class="images"
-                      width="107"
-                      height="65"
-                    />
-                  </div>
-                  Фитнес-браслеты
-                </a>
-              </li>
-              <li class="category_nav_item">
-                <a href="#" class="category_nav_link">
-                  <div class="category_nav_images">
-                    <img
-                      src="images/catalog_category/smart_watches.svg"
-                      alt="Умные часы"
-                      class="images"
-                      width="56"
-                      height="98"
-                    />
-                  </div>
-                  Умные часы
-                </a>
-              </li>
-              <li class="category_nav_item">
-                <a href="#" class="category_nav_link">
-                  <div class="category_nav_images">
-                    <img
-                      src="images/catalog_category/quadcopters.svg"
-                      alt="квадрокоптер"
-                      class="images"
-                      width="132"
-                      height="70"
-                    />
-                  </div>
-                  Квадрокоптеры
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav class="catalog_category_nav">
+          <ul class="category_nav_list">
+            <li class="category_nav_item">
+              <a href="#" class="category_nav_link">
+                <div class="category_nav_images">
+                  <img
+                    src="images/catalog_category/virtual_glasses.svg"
+                    alt="очки виртуальной реальности"
+                    class="images"
+                    width="97"
+                    height="55"
+                  />
+                </div>
+                <h3 class="category_nav_title">Виртуальная реальность</h3>
+              </a>
+            </li>
+            <li class="category_nav_item">
+              <a href="#" class="category_nav_link">
+                <div class="category_nav_images">
+                  <img
+                    src="images/catalog_category/monopods.svg"
+                    alt="моноподы"
+                    class="images monopod_category"
+                    width="86"
+                    height="117"
+                  />
+                </div>
+                Моноподы для селфи
+              </a>
+            </li>
+            <li class="category_nav_item">
+              <a href="#" class="category_nav_link">
+                <div class="category_nav_images">
+                  <img
+                    src="images/catalog_category/action_camera.svg"
+                    alt="Экшн-камера"
+                    class="images"
+                    width="71"
+                    height="87"
+                  />
+                </div>
+                Экшн-камеры
+              </a>
+            </li>
+            <li class="category_nav_item">
+              <a href="#" class="category_nav_link">
+                <div class="category_nav_images">
+                  <img
+                    src="images/catalog_category/fitnes_band.svg"
+                    alt="Фитнес-браслеты"
+                    class="images"
+                    width="107"
+                    height="65"
+                  />
+                </div>
+                Фитнес-браслеты
+              </a>
+            </li>
+            <li class="category_nav_item">
+              <a href="#" class="category_nav_link">
+                <div class="category_nav_images">
+                  <img
+                    src="images/catalog_category/smart_watches.svg"
+                    alt="Умные часы"
+                    class="images"
+                    width="56"
+                    height="98"
+                  />
+                </div>
+                Умные часы
+              </a>
+            </li>
+            <li class="category_nav_item">
+              <a href="#" class="category_nav_link">
+                <div class="category_nav_images">
+                  <img
+                    src="images/catalog_category/quadcopters.svg"
+                    alt="квадрокоптер"
+                    class="images"
+                    width="132"
+                    height="70"
+                  />
+                </div>
+                Квадрокоптеры
+              </a>
+            </li>
+          </ul>
+        </nav>
       </section>
       <section class="advantages">
         <h2 class="visually_hidden">Преимущества</h2>
-        <div class="wrapper">
-          <ul class="advantages_list">
-            <li class="advantages_list_item list_item_current">
-              <button
-                class="advantages_button button advantages_button_current"
-              >
-                Доставка
-              </button>
-              <div class="advantages_description_wrapper">
-                <h3 class="advantages_item_title">Доставка</h3>
-                <span class="advantages_description">
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                  на ваш этаж.</span
-                >
-              </div>
-            </li>
-            <li class="advantages_list_item">
-              <button class="advantages_button button">Гарантия</button>
-              <div class="advantages_description_wrapper visually_hidden">
-                <h3 class="advantages_item_title">Гарантия</h3>
-                <span class="advantages_description">
-                  Если из-за возгорания купленного у нас товара у вас сгорит дом
-                  — не переживайте, мы выдадим вам новый. Товар, не дом, конечно
-                  же.
-                </span>
-              </div>
-            </li>
-            <li class="advantages_list_item">
-              <button class="advantages_button button">Кредит</button>
-              <div class="advantages_description_wrapper visually_hidden">
-                <h3 class="advantages_item_title">Кредит</h3>
-                <span class="advantages_description">
-                  Залезть в долговую яму стало проще! Кредитные консультанты
-                  подберут для вас наиболее выгодные условия кредита. Выгодные
-                  для банка, разумеется.</span
-                >
-              </div>
-            </li>
-          </ul>
-        </div>
+        <ul class="advantages_list">
+          <li class="advantages_list_item list_item_current">
+            <button class="advantages_button button advantages_button_current">
+              Доставка
+            </button>
+            </div>
+          </li>
+          <li class="advantages_list_item">
+            <button class="advantages_button button">Гарантия</button>
+          </li>
+          <li class="advantages_list_item">
+            <button type="button" class="advantages_button button">Кредит</button>
+          </li>
+        </ul>
       </section>
       <div class="wrapper">
         <button class="modal_open">Доставим редкий товар под заказ</button>
@@ -315,9 +320,7 @@
               >
             </li>
             <li class="footer_navigation_item">
-              <a class="footer_navigation_link" href="garanty.html"
-                >Гарантия</a
-              >
+              <a class="footer_navigation_link" href="garanty.html">Гарантия</a>
             </li>
             <li class="footer_navigation_item">
               <a class="footer_navigation_link" href="contacts.html"
